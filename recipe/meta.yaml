@@ -10,7 +10,7 @@ source:
   sha256: 70acf8b373aea77bc219159a9528d8d974c9a6b81ea295d9c5d2baf9a38a1e4e
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv "
 
@@ -19,13 +19,14 @@ requirements:
     - pip
     - python
   run:
-    - msrest >=0.5.0
+    - msrest >=0.5.0,<0.6.0
     - python
     - setuptools
 
 test:
   imports:
     - vsts
+    - vsts.vss_connection
 
 about:
   home: https://github.com/Microsoft/vsts-python-api
