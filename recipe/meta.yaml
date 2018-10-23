@@ -1,5 +1,5 @@
 {% set name = "vsts" %}
-{% set version = "0.1.18" %}
+{% set version = "0.1.19" %}
 
 package:
   name: vsts-python-api
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 70acf8b373aea77bc219159a9528d8d974c9a6b81ea295d9c5d2baf9a38a1e4e
+  sha256: fa0d3a63f46ad08dba894098b7a0a6b8ecf63f7861ce46ec101e2066c7b3f2ff
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv "
 
