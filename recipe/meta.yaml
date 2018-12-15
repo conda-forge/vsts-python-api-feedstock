@@ -1,5 +1,5 @@
 {% set name = "vsts" %}
-{% set version = "0.1.18" %}
+{% set version = "0.1.21" %}
 
 package:
   name: vsts-python-api
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 70acf8b373aea77bc219159a9528d8d974c9a6b81ea295d9c5d2baf9a38a1e4e
+  sha256: 7c300c6760e2dcdebeb4556cb9746eab4a091bd5c6924e59a26a721ed087e06e
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv "
 
@@ -19,7 +19,7 @@ requirements:
     - pip
     - python
   run:
-    - msrest >=0.5.0,<0.6.0
+    - msrest >=0.5.0
     - python
     - setuptools
 
