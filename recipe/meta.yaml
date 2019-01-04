@@ -1,5 +1,5 @@
 {% set name = "vsts" %}
-{% set version = "0.1.21" %}
+{% set version = "0.1.22" %}
 
 package:
   name: vsts-python-api
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7c300c6760e2dcdebeb4556cb9746eab4a091bd5c6924e59a26a721ed087e06e
+  sha256: 2dbc6670e31bbd98cedbf9a7167560502eea9ec3d4da9bb039f153f34cd193d4
 
 build:
   number: 0
