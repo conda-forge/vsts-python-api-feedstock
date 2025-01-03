@@ -18,6 +18,7 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
+    - setuptools
   run:
     - msrest >=0.6.0,<0.7.0
     - python >={{ python_min }}
