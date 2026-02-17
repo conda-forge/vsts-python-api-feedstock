@@ -10,7 +10,7 @@ source:
   sha256: da179160121f5b38be061dbff29cd2b60d5d029b2207102454d77a7114e64f97
 
 build:
-  number: 2
+  number: 3
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -22,7 +22,7 @@ requirements:
   run:
     - msrest >=0.6.0,<0.7.0
     - python >={{ python_min }}
-    - setuptools
+    - setuptools <82
 
 test:
   imports:
@@ -46,3 +46,4 @@ about:
 extra:
   recipe-maintainers:
     - mariusvniekerk
+    - pavelzw
